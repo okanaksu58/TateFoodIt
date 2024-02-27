@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TateFoodIt", "TateFoodIt\TateFoodIt.csproj", "{A542BA69-2EA2-4857-9561-D88FE56089DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A542BA69-2EA2-4857-9561-D88FE56089DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A542BA69-2EA2-4857-9561-D88FE56089DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A542BA69-2EA2-4857-9561-D88FE56089DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A542BA69-2EA2-4857-9561-D88FE56089DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A38FADCA-475F-483F-A76E-EBFF328848E6}
+	EndGlobalSection
+EndGlobal
