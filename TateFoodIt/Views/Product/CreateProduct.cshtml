@@ -1,6 +1,6 @@
-﻿@model TateFoodIt.Entities.Category
+﻿@model TateFoodIt.Entities.Product
 @{
-    ViewBag.Title = "CreateCategory";
+    ViewBag.Title = "CreateProduct";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
@@ -24,13 +24,23 @@
                 <div class="card-body">
                     <form method="post">
                         <div class="form-group">
-                            <label for="exampleInputCategory">Kategori Adı</label>
-                            <input type="text" class="form-control" name="CategoryName" id="exampleInputCategory" aria-describedby="emailHelp"
-                                   placeholder="Kategori Adını Giriniz">
-                          
+                            <label>Ürün Adı</label>
+                            @Html.TextAreaFor(x => x.ProductName, new { @class = "form-control" })
+                            <br />
+                            <label>Ürün Fiyatı</label>
+                            @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+                            <br />
+                            <label>Ürün Açıklaması</label>
+                            @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+                            <br />
+                            <label>Ürün Kategorisi</label>
+                            @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.v, new { @class = "form-control" })
+                            <br />
+
+
                         </div>
-                       
-                        <button type="submit" class="btn btn-primary">Kategori Ekle</button>
+
+                        <button type="submit" class="btn btn-primary">Ürünü Ekle</button>
                     </form>
                 </div>
             </div>
@@ -38,3 +48,4 @@
         </div>
     </div>
 </div>
+

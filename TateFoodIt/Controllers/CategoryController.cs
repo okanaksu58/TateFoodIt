@@ -26,7 +26,28 @@ namespace TateFoodIt.Controllers
         {
             context.Categories.Add(category);
             context.SaveChanges();
-            return View("CategoryList");
+            return RedirectToAction("CategoryList");
+        }
+        public ActionResult DeleteCategory(int id)
+        {
+            var values = context.Categories.Find(id);
+            context.Categories.Remove(values);
+            context.SaveChanges();
+            return RedirectToAction("CategoryList");
+        }
+        [HttpGet]
+        public ActionResult UpdateCategory(int id)
+        {
+            var values = context.Categories.Find(id);
+            return View(values);
+        }
+        [HttpPost]
+        public ActionResult UpdateCategory(Category category) 
+        {
+            var values = context.Categories.Find(category.CategoryId);
+            values.CategoryName = category.CategoryName;
+            context.SaveChanges();
+            return RedirectToAction("CategoryList");
         }
     }
 }
